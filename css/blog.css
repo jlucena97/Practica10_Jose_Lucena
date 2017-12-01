@@ -1,0 +1,171 @@
+html, body {
+	font-family: 'Playfair Display', serif;
+	margin: 0;
+	padding: 0;
+}
+header{
+	width: 100%;
+	height: 800px;
+	display: grid;
+	grid-template-rows: 5% repeat(3,1fr);
+	background-image: url("http://v3wall.com/wallpaper/1920_1080/0911/1920_1080_20091122112458496865.jpg");
+	background-repeat: no-repeat;
+}
+/*Barra Superior*/
+#barra_superior{
+	margin: 0;
+	padding: 0px 10px 0px 10px;
+	display: grid;
+	grid-template-columns: 1fr;
+	background-color: grey;
+	opacity: 0.6;
+}
+#rrss #search{
+	border-radius: 25px;
+	box-shadow: 2px 2px 2px black;
+	display: none;
+	width: 80%;
+}
+#search::placeholder{
+	color:grey;
+}
+#rrss{
+	width: 100%;
+	margin: 0;
+}
+#rrss ul{
+	display: grid;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	grid-template-columns: repeat(6, 1fr);
+	justify-content: space-between;
+}
+#rrss ul li{
+	list-style: none;
+	text-align: center;
+}
+#rrss ul li img{
+	width: 25px;
+	height: 25px;
+}
+#rrss ul li img:hover{
+	box-shadow: 2px 2px 3px grey;
+}
+/*Menu*/
+#menu{
+	width:100%;
+	display: grid;
+	grid-template-rows: 0.2fr;
+}
+#menu h2{
+	color: white;
+	text-align: center;
+}
+
+#menu nav{
+	padding-top: 25px;
+	width: 100%;
+}
+#menu nav ul{
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+} 
+#menu ul li{
+	padding: 5px 15px 5px 15px;
+	display: flex;
+	flex-flow: row;
+}
+#menu ul li a{
+	text-decoration: none;
+	color:white;
+}
+#menu ul li:hover{
+	box-shadow: 1px 1px 2px #000;
+}
+/*Main*/
+main{
+	width: 100%;
+	margin: 0 auto; 
+	
+}
+main section{
+	margin: 0 auto;
+	width: 33%;
+	display: inline-block;
+}
+main section img{
+	width: 250px;
+	height: 200px;
+	box-shadow: 2px 2px 3px grey;
+	transition: width 2s,height 2s;
+	border-radius: 25px;
+	border:2px solid grey;
+}
+main section article div{
+	width: 60%;
+	margin: 0 auto;
+}
+main section img:hover{
+	width: 300px;
+	height: 250px;
+}
+main section article h3{
+text-align: center;
+}
+
+/*footer*/
+footer{ 
+	width: 100%;
+	background-color: grey;
+}
+footer #info_pag ul{
+	display: grid;
+	grid-template-columns: repeat(5,1fr); 
+	margin:0;
+	padding: 0;
+
+} 
+footer #info_pag ul li{ 
+	list-style: none; 
+	text-align: center;
+	padding: 10px;
+}
+
+footer #info_pag ul li a{
+ 	text-decoration: none;
+	color: black;
+}
+footer #info_pag img{
+	padding-top: 10px;
+	width: 35px;
+	height: 35px;
+}
+footer #info_pag img:hover{
+	transform: rotate(180deg);
+}
+/*Diseño específico*/
+header h1 {
+  	text-shadow: 4px 5px 2px grey;
+	color: white;
+	text-align: center;
+	font-size: 5rem;
+ 	color: #FFF;
+  	text-align: center;
+	animation-name: texto;
+    animation-duration: 10s;
+}
+@keyframes texto {
+    0%   {color: #444342;}
+    10%	 {color: #545353;}
+    20%	 {color: #ad3a3a;}
+    30%	 {color: #131b2e;}
+    40%  {color: #68d92f;}
+    50%  {color: #c2d92f;}
+    60%  {color: #7b357e;}
+    70%  {color: #2fe6e9;}
+    80%  {color: #001ffe;}
+    90%  {color: #f1f1f5;}
+    100% {color: #ff00ff;}
+}
